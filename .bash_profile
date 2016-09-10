@@ -146,13 +146,6 @@ export PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
 
 alias veewee='bundle exec veewee'
 
-
-# DVA Setup
-export P4PORT=ssl:p4proxy.soma.salesforce.com:1999
-source ~/acd_func.sh
-
-alias ssh-rhel01='ssh gkumar@192.168.52.175'
-
 search() { 
 	if [ $# == 2 ]; then
 		find . -name "$1" -exec grep -sH $2 {} \; ;
